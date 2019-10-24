@@ -1,0 +1,89 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  height: calc(90%);
+  max-height: 600px;
+  width: 100%;
+}
+
+.modal-header {
+  border-bottom: 0;
+  opacity: 1;
+
+  img {
+    float: right;
+  }
+}
+
+.modal-content {
+  background: rgba(247,110,15,0.56);
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
+}
+
+.modal-body {
+  opacity: 1;
+
+  .menu-header-container{
+  height: 100%;
+
+    #menu-header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+
+      a {
+        font-family: 'opificio';
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.modal-footer {
+  border-top: 0;
+  opacity: 1;
+}
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
