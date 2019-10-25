@@ -22,6 +22,8 @@ $sage_error = function ($message, $subtitle = '', $title = '') {
 
 add_filter('show_admin_bar', '__return_false');
 
+
+
 /**
  * Ensure compatible version of PHP is used
  */
@@ -35,6 +37,8 @@ if (version_compare('7.1', phpversion(), '>=')) {
 if (version_compare('4.7.0', get_bloginfo('version'), '>=')) {
     $sage_error(__('You must be using WordPress 4.7.0 or greater.', 'sage'), __('Invalid WordPress version', 'sage'));
 }
+
+define( 'WP_DEBUG', true );
 
 /**
  * Ensure dependencies are loaded

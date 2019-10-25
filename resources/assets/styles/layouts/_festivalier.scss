@@ -1,0 +1,63 @@
+.festivalier {
+  .row-text {
+    text-align: center;
+
+    p{
+      font-size: 60px;
+    }
+  }
+
+  .r-first {
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
+
+  .r-second {
+    margin-bottom: 100px;
+  }
+
+  .r-promo {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+  }
+  .countdown {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+
+    .square {
+      float:left;
+      position: relative;
+      width: calc(10%);
+      padding-bottom: 11%;
+      margin: 0;
+      overflow:hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    .round {
+      position:absolute;
+      height:80%; /* = 100% - 2*10% padding */
+      width:90%; /* = 100% - 2*5% padding */
+      padding: 10% 5%;
+      text-align: center;
+      margin: 0 auto;
+      border: 10px solid $myf-orange;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      p{
+        font-size: 30px;
+        color: black;
+      }
+    }
+  }
+}

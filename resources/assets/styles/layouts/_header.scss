@@ -24,8 +24,16 @@
   text-align: left;
   vertical-align: middle;
   height: calc(90%);
-  max-height: 600px;
   width: 100%;
+  max-width: 95%;
+}
+
+.modal-backdrop {
+  background-color: $myf-orange;
+}
+
+.modal-backdrop.show{
+  opacity: 1!important;
 }
 
 .modal-header {
@@ -38,10 +46,10 @@
 }
 
 .modal-content {
-  background: rgba(247,110,15,0.56);
   height: 100%;
   border: 0;
-  border-radius: 30px;
+  border-radius: 0;
+  background-color: white;
 }
 
 .modal-body {
@@ -74,6 +82,10 @@
 /* Style the header */
 .header {
   padding: 10px 16px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -81,9 +93,4 @@
   position: fixed;
   top: 0;
   width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
 }
