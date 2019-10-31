@@ -1,0 +1,38 @@
+footer {
+  background-color: $myf-orange;
+  height: auto;
+
+  .row {
+    height: 120px;
+    .row-left {
+      padding-left: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
+
+    .row-rs {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 40px;
+      }
+
+      padding-right: 100px;
+    }
+
+    a, p {
+      color: white;
+    }
+
+    a {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

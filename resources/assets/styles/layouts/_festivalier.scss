@@ -1,9 +1,12 @@
 .festivalier {
+  padding-bottom: 60px;
   .row-text {
     text-align: center;
 
     p{
       font-size: 60px;
+      text-transform: lowercase;
+      font-weight: bold;
     }
   }
 
@@ -22,6 +25,7 @@
     max-width: 50%;
     text-align: center;
   }
+
   .countdown {
     display: flex;
     max-width: 100%;
@@ -48,6 +52,7 @@
       text-align: center;
       margin: 0 auto;
       border: 10px solid $myf-orange;
+      background-color: $myf-orange;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -56,8 +61,148 @@
 
       p{
         font-size: 30px;
-        color: black;
+        color: white;
+        line-height: 20px;
+
+        &:first-of-type {
+          line-height: 42px;
+          font-weight: bold;
+          font-size: 42px;
+          margin-bottom: 0;
+        }
       }
+    }
+  }
+
+  .coll-img-full {
+    .img-section {
+      width: 100%;
+      height: auto;
+      position: relative;
+
+      .white-rectangle {
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right:0;
+        width: 90%;
+        height: 85%;
+        border: 10px solid white;
+
+        p {
+          font-weight: bold;
+          color: white;
+          bottom: 10%;
+          position: absolute;
+          left: 5%;
+          font-size: 70px;
+        }
+
+        .underline--magical {
+          background-image: linear-gradient(120deg, $myf-orange 0%, $myf-orange 100%);
+          background-repeat: no-repeat;
+          background-size: 20% 0.5em;
+          background-position: 100% 95%;
+          transition: background-size 0.25s ease-in;
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  .row-section{
+    .col-image {
+      padding: 75px 10%;
+
+      .img-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .white-rectangle {
+          margin: auto;
+          position: absolute;
+          top: 0; left: 0; bottom: 0; right:0;
+          width: 90%;
+          height: 85%;
+          border: 10px solid white;
+        }
+      }
+    }
+
+    .col-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      hr {
+        height: 3px;
+        background-color: black;
+        width: 50px;
+        margin-top: 0;
+      }
+
+      .custom-btn {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 300px;
+        height: 80px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          .background {
+            bottom: 10%;
+            right: 5%;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          display: flex;
+          width: 90%;
+          height: 90%;
+          border: 4px solid black;
+          z-index: 10;
+          background: transparent;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+
+        .background {
+          position: absolute;
+          width: 90%;
+          height: 90%;
+          bottom: -5%;
+          right: 1%;
+          background-color: $myf-orange;
+          z-index: 9;
+          content: "";
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .reverse {
+      flex-direction: column-reverse;
     }
   }
 }

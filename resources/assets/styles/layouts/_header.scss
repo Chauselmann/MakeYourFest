@@ -42,6 +42,7 @@
 
   img {
     float: right;
+    cursor: pointer;
   }
 }
 
@@ -84,8 +85,8 @@
   padding: 10px 16px;
   position: fixed;
   width: 100%;
-  background-color: white;
   z-index: 99;
+  background-color: white;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
