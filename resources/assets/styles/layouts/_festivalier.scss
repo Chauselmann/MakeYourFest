@@ -78,7 +78,6 @@
     .img-section {
       width: 100%;
       height: auto;
-      position: relative;
 
       .white-rectangle {
         margin: auto;
@@ -100,8 +99,8 @@
         .underline--magical {
           background-image: linear-gradient(120deg, $myf-orange 0%, $myf-orange 100%);
           background-repeat: no-repeat;
-          background-size: 20% 0.5em;
-          background-position: 100% 95%;
+          background-size: 20% 0.5em!important;
+          background-position: 100% 95%!important;
           transition: background-size 0.25s ease-in;
           width: fit-content;
         }
@@ -114,7 +113,7 @@
       padding: 75px 10%;
 
       .img-section {
-        width: 100%;
+        width: 81%;
         height: auto;
         position: relative;
 

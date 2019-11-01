@@ -131,12 +131,12 @@
     </div>
     <div class="row">
       <div class="col-md-12 coll-img-full">
-        <div class="img-section">
+        <a href="<?= get_the_permalink(27) ;?>" class="img-section">
           <img src="@asset('images/pop.jpg')" width="100%" height="100%">
           <div class="white-rectangle">
             <p class="underline--magical">Découvrez le jury</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

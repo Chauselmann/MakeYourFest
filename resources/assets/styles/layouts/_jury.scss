@@ -1,0 +1,49 @@
+.container-jury {
+  padding-top: 200px;
+  .col-picture {
+    position: relative;
+    .text-over {
+      position: absolute;
+      bottom: 12%;
+      color: white;
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      .underline--magical {
+        background-image: linear-gradient(120deg, $myf-orange 0%, $myf-orange 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.5em !important;
+        background-position: 100% 95% !important;
+        transition: background-size 0.25s ease-in;
+        width: fit-content;
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .col-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+      max-width: 50%;
+      text-align: center;
+    }
+    img {
+      width:100%;
+      max-width: 120px;
+      margin-bottom: 50px;
+    }
+  }
+}

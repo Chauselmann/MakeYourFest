@@ -3,6 +3,7 @@ export default {
     // When the user scrolls the page, execute myFunction
   },
   finalize() {
+
     //JavaScript to be fired on all pages, after page specific JS is fired
     // Set the date we're counting down to
 var countDownDate = new Date('Jan 5, 2021 15:37:25').getTime();
